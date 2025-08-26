@@ -36,11 +36,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    html { scroll-behavior: smooth; }
-   [lang="ko"] { display: none; }
-  /* '한국어' 버튼을 눌렀을 때만 한국어가 보이도록 설정 */
-  html.lang-ko [lang="ko"] { display: revert; }
-  html.lang-ko [lang="en"] { display: none; }
+   html { scroll-behavior: smooth; }
+  /* 기본 상태에서는 영어만 보이도록 설정 */
+  body:not(.lang-ko) [lang="ko"] { display: none; }
+  body:not(.lang-en) [lang="en"] { display: none; }
+  
+  /* 클래스가 적용되면 해당 언어만 보이도록 설정 */
+  body.lang-ko [lang="ko"] { display: revert; }
+  body.lang-en [lang="en"] { display: revert; }
   </style>
   <script type="application/ld+json">
     {
@@ -343,14 +346,14 @@
 
     function setLanguage(lang) {
      console.log('언어 설정 시도:', lang);
-      htmlEl.className = `lang-${lang}`;
-      localStorage.setItem('preferredLang', lang);
-      langSwitchers.forEach(s => {
-        s.classList.toggle('font-bold', s.dataset.lang === lang);
-        s.classList.toggle('text-brand', s.dataset.lang === lang);
-      });
-      htmlEl.setAttribute('lang', lang);
-    }
+  document.body.className = `lang-${lang} font-body text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-950`; // body 태그를 변경
+  localStorage.setItem('preferredLang', lang);
+  langSwitchers.forEach(s => {
+    s.classList.toggle('font-bold', s.dataset.lang === lang);
+    s.classList.toggle('text-brand', s.dataset.lang === lang);
+  });
+  htmlEl.setAttribute('lang', lang);
+}
 
     langSwitchers.forEach(switcher => {
       switcher.addEventListener('click', (e) => {
