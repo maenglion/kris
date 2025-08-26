@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>In the Media | Minha Chung</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { display: ['Noto Sans KR', 'sans-serif'], body: ['Noto Sans KR', 'sans-serif'] }, colors: { brand: { DEFAULT: '#0ea5e9', dark: '#0284c7' } } } },
+      darkMode: 'class'
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body:not(.lang-ko) [lang="ko"] { display: none; }
+    body:not(.lang-en) [lang="en"] { display: none; }
+    body.lang-ko [lang="ko"] { display: revert; }
+    body.lang-en [lang="en"] { display: revert; }
+
+    /* --- 이미지 스타일 추가 --- */
+    .article-image-wrapper {
+      width: 100%;
+      height: 200px; /* 이미지 컨테이너 높이 고정 */
+      background-color: #f0f2f5; /* 여백 색상 */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .dark .article-image-wrapper {
+        background-color: #1e293b; /* 다크모드 여백 색상 */
+    }
+    .article-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* 이미지가 찌그러지지 않고 비율 유지 */
+    }
+  </style>
+</head>
+<body class="font-body text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-950">
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/90 dark:bg-slate-900/90 border-b dark:border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/index.html" class="text-lg sm:text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+        <span lang="ko">← 프로필로 돌아가기</span>
+        <span lang="en">← Back to Profile</span>
+      </a>
+       <div class="flex items-center gap-2 text-sm">
+            <button data-lang="en" class="lang-switcher">EN</button>
+            <span class="text-slate-300 dark:text-slate-700">|</span>
+            <button data-lang="ko" class="lang-switcher">KR</button>
+        </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+        <span lang="ko">언론 보도</span>
+        <span lang="en">In the Media</span>
+    </h1>
+    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
+        <span lang="ko">주요 기사 및 공개 토론 기록입니다.</span>
+        <span lang="en">A selection of articles and public discussions.</span>
+    </p>
+
+    <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+
+
+ <a href="https://www.edaily.co.kr/News/Read?newsId=04021286609566376&mediaCodeNo=257&OutLnkChk=Y" target="_blank" rel="noopener noreferrer" class="block border border-slate-200 dark:border-slate-800 rounded-lg overflow-hidden hover:shadow-lg dark:hover:border-brand transition h-full flex flex-col">
+  <div class="p-4 flex-grow flex flex-col">
+    <p class="text-sm text-slate-500">
+ <span lang="ko">이데일리 · 2015.11.16</span>
+              <span lang="en">edaily · 2015.11.16</span>
+    </p>
+    <h3 class="mt-2 font-semibold text-slate-900 dark:text-white">
+              <span lang="ko">한국정보화진흥원, K-ICT 빅데이터센터 2주년 기념 세미나 개최</span>
+              <span lang="en">National Information Society Agency (NIA) Hosts Seminar to Commemorate the 2nd Anniversary of the K-ICT Big Data Center</span>
+    </h3>
+    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 flex-grow">
+        <span lang="ko">‘빅데이터 트랜드 및 창업성공 전략’을 주제로 진행된 세미나에서는 김이식 KT 상무와 정민하 네이버 실장의 기조연설과 캔디 모바일, 컨시더씨 등 빅데이터 창업 우수사례가 발표됐다.</span>
+        <span lang="en"> At the seminar, held under the theme of 'Big Data Trends and Successful Startup Strategies,' keynote speeches were delivered by Kim Yi-sik, Executive Director at KT, and Jeong Min-ha, Head of Office at Naver. Additionally, outstanding big data startup success stories, such as those of Candy Mobile and ConsiderC, were presented. </span>
+    </p>
+  </div>
+</a>
+
+
+        <a href="https://www.m-i.kr/news/articleView.html?idxno=190950" target="_blank" rel="noopener noreferrer" class="block border border-slate-200 dark:border-slate-800 rounded-lg overflow-hidden hover:shadow-lg dark:hover:border-brand transition">
+        <div class="article-image-wrapper">
+            <img src="https://res.cloudinary.com/dnswboo5z/image/upload/v1756191408/20151012113745409943_bcni6u.jpg" alt="Article Thumbnail" class="article-image">
+        </div>
+        <div class="p-4">
+          <p class="text-sm text-slate-500">
+               <span lang="ko">매일일보· 2015.10.09</span>
+              <span lang="en">Maeil Daily· 2015.10.09</span>
+          </p>
+          <h3 class="mt-2 font-semibold text-slate-900 dark:text-white">
+ <span lang="ko">‘개방과 공유의 빅데이터 거버넌스’와 ‘빅데이터 활용과 개인정보보호의 양립’ 등 두 가지 주제로 두 개의 포럼이 A와 B트랙으로 나누어 각각 진행되며 B트랙에 정민하 네이버 실장이 토론에 참여한다.</span>
+        <span lang="en">In the Track B forum, themed 'The Compatibility of Big Data Utilization and Personal Information Protection', Jeong Min-ha, Head of Office at Naver, will participate in a discussion panel. She will be joined by Jeong Bu-man, Head of Division at NIA, following presentations by other experts in the field.</span>
+          </h3>
+        </div>
+      </a>
+      
+
+ <a href="https://www.ajunews.com/view/20150418130439146" target="_blank" rel="noopener noreferrer" class="block border border-slate-200 dark:border-slate-800 rounded-lg overflow-hidden hover:shadow-lg dark:hover:border-brand transition h-full flex flex-col">
+  <div class="p-4 flex-grow flex flex-col">
+    <p class="text-sm text-slate-500">
+ <span lang="ko">아주경제· 2015.04.18</span>
+              <span lang="en">Aju Business Daily · 2015.04.18</span>
+    </p>
+    <h3 class="mt-2 font-semibold text-slate-900 dark:text-white">
+              <span lang="ko">[글로벌 ICT 동향] (5) 급성장의 대가 치르는 구글, IT 기술 혁신 위축 우려 목소리도</span>
+              <span lang="en">[Global ICT Trends] (5) Google Pays the Price for Rapid Growth, Amid Concerns of Stifling IT Innovation</span>
+    </h3>
+    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 flex-grow">
+        <span lang="ko">국회 토론회에 참석한 정민하 네이버 정책협력실장은 “세계적 IT서비스 산업에 대한 규제완화 추세와 맞지 않는 규제는 자칫 국내 ICT 기업에 대한 역차별로 작용해 국내 산업을 위축시킬 수 있다”고 주장했다.  그러나 국정감사에서는 네이버의 검색시장 점유율이 70%이상인데도 시장 지배적 사업자로 분류되지 않고 있어 책임부여가 필요하다는 의견이 계속해서 나오고 있는 상황</span>
+        <span lang="en">Chung Min-ha, Head of Naver's Policy Cooperation Office, who attended a National Assembly forum, argued, “Regulations that do not align with the global trend of deregulation in the IT service industry could inadvertently act as reverse discrimination against domestic ICT companies and stifle the domestic industry.” However, during a parliamentary audit, opinions continue to emerge that accountability needs to be imposed on Naver, as it is not classified as a market-dominant operator despite holding over 70% of the search market share.</span>
+    </p>
+  </div>
+</a>
+
+
+ <a href="https://www.dt.co.kr/article/10934586" target="_blank" rel="noopener noreferrer" class="block border border-slate-200 dark:border-slate-800 rounded-lg overflow-hidden hover:shadow-lg dark:hover:border-brand transition h-full flex flex-col">
+  <div class="p-4 flex-grow flex flex-col">
+    <p class="text-sm text-slate-500">
+ <span lang="ko">디지털타임즈 · 2015.04.12</span>
+              <span lang="en">Digital Times · 2015.04.12</span>
+    </p>
+    <h3 class="mt-2 font-semibold text-slate-900 dark:text-white">
+              <span lang="ko">권은희 의원 "ICT 규제 합리화법 조만간 제출"</span>
+              <span lang="en">Lawmaker Kwon Eun-hee: "A bill for the rationalization of ICT regulations will be submitted soon</span>
+    </h3>
+    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 flex-grow">
+        <span lang="ko">권 의원은 이번 토론회에서 논의된 의견을 종합적으로 검토해 ICT 정책 로드맵 수립 및 이에 근거한 전기통신사업법 개정안을 마련할 계획" 이라고 언급하였으며  이날 토론회에는 패널로 김경만 미래창조과학부 경쟁정책과 과장, 정민하 네이버 사업정책실 실장, 정재훈 변호사(구글코리아 선임정책자문), 김정언 정보통신정책연구원 실장이 참석</span>
+        <span lang="en">The panel for the debate included Kim Kyeong-man, Director of the Competition Policy Division at the Ministry of Science, ICT and Future Planning; Chung Min-ha, Head of the Business Policy Office at Naver; Jeong Jae-hoon, Attorney (Senior Policy Counsel at Google Korea); and Kim Jeong-eon, a director at the Korea Information Society Development Institute (KISDI)</span>
+    </p>
+  </div>
+</a>
+
+
+      <a href="https://www.hankyung.com/article/201503097523g" target="_blank" rel="noopener noreferrer" class="block border border-slate-200 dark:border-slate-800 rounded-lg overflow-hidden hover:shadow-lg dark:hover:border-brand transition h-full flex flex-col">
+  <div class="p-4 flex-grow flex flex-col">
+    <p class="text-sm text-slate-500">
+ <span lang="ko">한국경제신문 · 2015.03.09</span>
+              <span lang="en">The Korea Economic Daily· 2015.03.09</span>
+    </p>
+    <h3 class="mt-2 font-semibold text-slate-900 dark:text-white">
+              <span lang="ko">한국광고학회 · 한국광고홍보학회, 13일 첫 공동 세미나 개최</span>
+              <span lang="en">The Korean Advertising Society and the Korean Academy of Advertising & PR to Host First Joint Seminar on the 13th</span>
+    </h3>
+    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 flex-grow">
+        <span lang="ko">한국광고학회와 한국광고홍보학회는 한국광고문화회관에서 '광고홍보 생태계의 변화와 패러다임의 전환'을 주제로 첫 공동 학술세미나를 개최한다.</span>
+        <span lang="en">The Korean Advertising Society and the Korean Academy of Advertising and Public Relations will host their first joint academic seminar on the 13th at 2 PM at the Korea Advertising Culture Center under the theme, "Changes in the Advertising and PR Ecosystem and a Paradigm Shift."</span>
+    </p>
+  </div>
+</a>
+
+        
+     
+ <a href="https://www.etoday.co.kr/news/view/103648" target="_blank" rel="noopener noreferrer" class="block border border-slate-200 dark:border-slate-800 rounded-lg overflow-hidden hover:shadow-lg dark:hover:border-brand transition h-full flex flex-col">
+  <div class="p-4 flex-grow flex flex-col">
+    <p class="text-sm text-slate-500">
+ <span lang="ko">이투데이 · 2014-12-11</span>
+              <span lang="en">etoday · 2014-12-11</span>
+    </p>
+    <h3 class="mt-2 font-semibold text-slate-900 dark:text-white">
+              <span lang="ko">포털사 "규제 풀어라" vs. 미래부 "필요한건 남겨야"</span>
+              <span lang="en">Portal giants call for deregulation, while Ministry insists on necessary rules.</span>
+    </h3>
+    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 flex-grow">
+        <span lang="ko">한글 기사 요약을 여기에 입력하세요.</span>
+        <span lang="en">English article summary goes here.</span>
+    </p>
+  </div>
+</a>
+     
+
+ <a href="https://www.fnnews.com/news/201412111753443716" target="_blank" rel="noopener noreferrer" class="block border border-slate-200 dark:border-slate-800 rounded-lg overflow-hidden hover:shadow-lg dark:hover:border-brand transition h-full flex flex-col">
+  <div class="p-4 flex-grow flex flex-col">
+    <p class="text-sm text-slate-500">
+ <span lang="ko">파이낸셜뉴스 · 2014.12.11</span>
+              <span lang="en">financial news · 2014.12.11</span>
+    </p>
+    <h3 class="mt-2 font-semibold text-slate-900 dark:text-white">
+              <span lang="ko">핀테크·IoT 시장 규제 완화, 필요한 인터넷 규제는 유지</span>
+              <span lang="en">Easing regulations on fintech and IoT markets, maintaining necessary internet regulations</span>
+    </h3>
+    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 flex-grow">
+        <span lang="ko">네이버 정민하 정책협력실장도 "규제에 시차적인 문제가 있어 정작 산업이 성장할 때 국내 기업들은 성장하지 못하는 경우가 많다"며 "인터넷 산업 경쟁력 강화를 위해 규제를 총괄할 컨트롤 타워가 있어야 하고 이에 대한 방향을 논의해야 한다"고 강조했다.</span>
+        <span lang="en">The South Korean government plans to ease regulations for new growth industries like fintech and IoT. However, it will maintain existing internet regulations to protect users and prevent market dominance abuse. Industry leaders are calling for a collaborative regulatory body to ensure that these regulations do not stifle innovation. </span>
+    </p>
+  </div>
+</a>
+
+
+
+      </div>
+    </main>
+
+  <script>
+    // 언어 전환 로직 (index.html과 동일)
+    const langSwitchers = document.querySelectorAll('.lang-switcher');
+    const htmlEl = document.documentElement;
+
+    function setLanguage(lang) {
+      document.body.className = `lang-${lang} font-body text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-950`;
+      localStorage.setItem('preferredLang', lang);
+      langSwitchers.forEach(s => {
+        s.classList.toggle('font-bold', s.dataset.lang === lang);
+        s.classList.toggle('text-brand', s.dataset.lang === lang);
+      });
+      htmlEl.setAttribute('lang', lang);
+    }
+
+    langSwitchers.forEach(switcher => {
+      switcher.addEventListener('click', (e) => {
+        setLanguage(e.target.dataset.lang);
+      });
+    });
+
+    // 페이지 로드 시 언어 설정
+    const savedLang = localStorage.getItem('preferredLang');
+    if (savedLang) {
+      setLanguage(savedLang);
+    } else {
+      const userLang = navigator.language || navigator.userLanguage; 
+      setLanguage(userLang.startsWith('ko') ? 'ko' : 'en');
+    }
+  </script>
+</body>
+</html>
