@@ -341,6 +341,7 @@
     const htmlEl = document.documentElement;
 
     function setLanguage(lang) {
+     console.log('언어 설정 시도:', lang);
       htmlEl.className = `lang-${lang}`;
       localStorage.setItem('preferredLang', lang);
       langSwitchers.forEach(s => {
