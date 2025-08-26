@@ -37,9 +37,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     html { scroll-behavior: smooth; }
-    [lang="ko"], [lang="en"] { display: none; }
-    html.lang-ko [lang="ko"] { display: revert; }
-    html.lang-en [lang="en"] { display: revert; }
+   [lang="ko"] { display: none; }
+  /* '한국어' 버튼을 눌렀을 때만 한국어가 보이도록 설정 */
+  html.lang-ko [lang="ko"] { display: revert; }
+  html.lang-ko [lang="en"] { display: none; }
   </style>
   <script type="application/ld+json">
     {
